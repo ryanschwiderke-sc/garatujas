@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Draco Malfoy</title>
+  <style>
+    :root {
+      --grid-info-size: 230px;
+      --color-bg-hi: #0d3b2e;
+      --color-gold: #7ecac3;
+      --color-dark: #050f1a;
+      --color-parchment: #c8e6e3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #050f1a;
+      background-image:
+        radial-gradient(ellipse at top left, #0a2a3b 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, #071a2a 0%, transparent 50%);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: var(--color-parchment);
+    }
+
+    body > * {
+      border: 2px solid var(--color-gold);
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "social info   content"
+        "footer footer footer";
+      grid-template-columns: auto var(--grid-info-size) 1fr;
+      grid-template-rows: 1fr 120px;
+      gap: .5rem;
+      padding: .5rem;
+      min-height: 100svh;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-area: info;
+      background-color: #071a2a;
+
+      .thumb {
+        width: calc(var(--grid-info-size) - 20px);
+        height: calc(var(--grid-info-size) - 20px);
+        background-color: #0a2a3b;
+        border-radius: 50%;
+        flex: none;
+        z-index: 2;
+        overflow: clip;
+        border: 3px solid var(--color-gold);
+        box-shadow: 0 0 20px #7ecac388;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      section {
+        background-color: var(--color-bg-hi);
+        width: 100%;
+        height: 100%;
+        margin-top: -4rem;
+        padding-top: 4rem;
+        z-index: 1;
+        clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
+        color: var(--color-parchment);
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    main {
+      grid-area: content;
+      position: relative;
+      isolation: isolate;
+      padding: 1rem;
+      background-color: #060d1f;
+
+      h1 {
+        margin: 0 0 5rem 0;
+        font-size: 5rem;
+        color: var(--color-gold);
+        text-shadow: 0 0 30px #7ecac3, 0 2px 4px #000;
+      }
+
+      p {
+        color: var(--color-parchment);
+        line-height: 1.8;
+        font-size: 1.05rem;
+      }
+
+      &:before {
+        content: "";
+        background-color: var(--color-bg-hi);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.3;
+        clip-path: polygon(
+          0    calc(var(--grid-info-size) - 6rem),
+          100% calc(var(--grid-info-size) - 10rem),
+          100% 100%,
+          0    100%
+        );
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 200px 350px 10px;
+        gap: 1rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 2px solid var(--color-gold);
+          box-shadow: 0 0 8px #7ecac355;
+        }
+      }
+    }
+
+    .social {
+      grid-area: social;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-color: #071a2a;
+      padding: .5rem;
+      gap: .5rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      a {
+        display: block;
+        transition: transform 0.2s;
+      }
+
+      a:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: var(--color-bg-hi);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 2px solid var(--color-gold);
+
+      p {
+        color: var(--color-gold);
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <div class="thumb">
+      <img src="https://criticalhits.com.br/wp-content/uploads/2021/03/draco-malfoy-harry-potter.jpg" alt="Foto de Perfil Draco Malfoy">
+    </div>
+    <section>
+      <p>Bruxo</p>
+      <p>Casa Sonserina</p>
+      <p>Vassoura: Nimbus 2001</p>
+    </section>
+  </aside>
+  <main>
+    <article>
+      <h1>Perfil Bruxo</h1>
+      <p>
+        <!-- Texto feito por IA-->
+        Sonserino por excelência. Elegância, poder e tradição acima de tudo.
+      </p>
+    </article>
+
+    <div class="gallery">
+      <img src="https://t3.ftcdn.net/jpg/03/26/22/48/360_F_326224870_vB8XRJbWr0qDG5bhAomLjVlKzcUXPdKA.jpg" alt="Imagem de Hogwarts">
+      <img src="https://criticalhits.com.br/wp-content/uploads/2021/04/hagrid-910x512.jpg" alt="Image do Hagrid">
+      <img src="https://criticalhits.com.br/wp-content/uploads/2022/03/d87401d708e00636c333a2911043d36a636592d1_hq.jpg" alt="Imagem da Minerva">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PgbVfgjLRv0hSemCZ_2_sJen4AdLCSQXRA&s" alt="Imagem de Ron Weasley">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM7xCHN2TXl6Z6S0Xj6nM1KwBFXa-5ZeCdzQ&s" alt="Imagem de Alvo...">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSm-J2RwEQbjZOOt9IO7T_-wrzCvNlpK60w&s" alt="Imagem de Luna...">
+      <img src="https://criticalhits.com.br/wp-content/uploads/2021/04/dobby-910x512.jpg" alt="Imagem de Dobby">
+      <img src="https://aiesec.org.br/wp-content/uploads/2023/10/snape-1024x655.webp" alt="Imagem de Snape">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg" alt="Imagem de Hermione">
+      <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/harry-potter-aniversario.webp?w=984" alt="Imagem de Harry Potter">
+    </div>
+  </main>
+
+  <div class="social">
+    <a href="https://www.facebook.com/TomFeltonOfficial/?locale=pt_BR">
+      <img src="assets/facebook.png" alt="Logo Facebook">
+    </a>
+    <a href="https://x.com/TomFelton">
+      <img src="assets/twitter.png" alt="Logo Twitter">
+    </a>
+    <a href="https://www.instagram.com/t22felton/">
+      <img src="assets/instagram.png" alt="Logo Instagram">
+    </a>
+  </div>
+
+  <footer>
+    <p>🐍 © 2024. Todos os direitos reservados 🐍</p>
+  </footer>
+</body>
+</html>
