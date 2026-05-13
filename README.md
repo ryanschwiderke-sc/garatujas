@@ -31,3 +31,35 @@ funções
 no JavaScript, é uma função dentro de um objeto.
 no TypeScript, é parecido, mas com tipos.
 no Java, sempre fica dentro de uma classe.
+
+# DÚVIDAS 
+
+Qual problema pode surgir se os atributos de um objeto não forem inicializados por meio de um construtor no momento da sua criação?
+
+De que forma o fato de objetos da mesma classe poderem possuir valores diferentes contribui para a organização e a reutilização do código em sistemas maiores?
+
+=============================================================
+
+1- O que é Abstração?
+
+Resposta: Abstração em Programação Orientada a Objetos (POO) é o conceito de ocultar os detalhes internos de funcionamento de um objeto e exibir apenas as informações e ações necessárias para seu uso. Isso torna o código mais organizado, simples e fácil de entender.
+
+2- O que é Composição?
+
+Resposta: Composição em POO acontece quando uma classe possui objetos de outras classes em sua estrutura, formando uma relação de “tem um”. Por exemplo, um carro possui motor, rodas e portas, que fazem parte da composição do objeto carro.
+
+3- O que significa “===”?
+
+Resposta: O operador “===” é utilizado para comparar dois valores verificando tanto o conteúdo quanto o tipo de dado. Assim, os valores precisam ser iguais e do mesmo tipo para o resultado ser verdadeiro.
+
+4- Como funcionam os Getters e Setters?
+
+Resposta: Getters e Setters são métodos utilizados para acessar e modificar atributos privados de uma classe. O Getter retorna o valor de um atributo, enquanto o Setter permite alterar esse valor de forma controlada.
+
+5- Como funciona a Programação Estruturada?
+
+Resposta: Programação estruturada é um paradigma em que o código é organizado em sequência lógica, utilizando estruturas como condições, repetições e funções. Esse modelo facilita a leitura, manutenção e compreensão do programa.
+
+6- Como funciona o Constructor?
+
+Resposta: O construtor (constructor) é um método especial de uma classe responsável por inicializar um objeto no momento em que ele é criado. Ele é executado automaticamente ao utilizar a palavra-chave new e geralmente define os valores iniciais dos atributos do objeto.
